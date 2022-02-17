@@ -63,7 +63,3 @@ function getQuotientRemainder(){
 function reset(){
     location.replace("index.html");
 }
-
-function abc(){
-    alert(1);
-}
