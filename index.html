@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h3>Quotient and Remainder Finder</h3>
+        <br><br>
+        <div class="keypad-container">
+            <div>
+                <input type="text" class="input-field" name="numerator" id="numerator" placeholder="Enter the numerator" disabled>
+                <br><br>
+                <button class="keypad-button" onclick="assignValue(1,'numerator')">1</button>
+                <button class="keypad-button" onclick="assignValue(2,'numerator')">2</button>
+                <button class="keypad-button" onclick="assignValue(3,'numerator')">3</button>
+                <br>
+                <button class="keypad-button" onclick="assignValue(4,'numerator')">4</button>
+                <button class="keypad-button" onclick="assignValue(5,'numerator')">5</button>
+                <button class="keypad-button" onclick="assignValue(6,'numerator')">6</button>
+                <br>
+                <button class="keypad-button" onclick="assignValue(7,'numerator')">7</button>
+                <button class="keypad-button" onclick="assignValue(8,'numerator')">8</button>
+                <button class="keypad-button" onclick="assignValue(9,'numerator')">9</button>
+                <br>
+                <button class="keypad-clear-button" onclick="allClear('numerator')">AC</button>
+                <button class="keypad-button" onclick="assignValue(0,'numerator')">0</button>
+                <button class="keypad-back-button" onclick="clearLast('numerator')">C</button>
+            </div>
+            <div class="keypad-right">
+                <input type="text" class="input-field" name="denominator" id="denominator" placeholder="Enter the denominator" disabled required>
+                <br><br>
+                <button class="keypad-button" onclick="assignValue(1,'denominator')">1</button>
+                <button class="keypad-button" onclick="assignValue(2,'denominator')">2</button>
+                <button class="keypad-button" onclick="assignValue(3,'denominator')">3</button>
+                <br>
+                <button class="keypad-button" onclick="assignValue(4,'denominator')">4</button>
+                <button class="keypad-button" onclick="assignValue(5,'denominator')">5</button>
+                <button class="keypad-button" onclick="assignValue(6,'denominator')">6</button>
+                <br>
+                <button class="keypad-button" onclick="assignValue(7,'denominator')">7</button>
+                <button class="keypad-button" onclick="assignValue(8,'denominator')">8</button>
+                <button class="keypad-button" onclick="assignValue(9,'denominator')">9</button>
+                <br>
+                <button class="keypad-clear-button" onclick="allClear('denominator')">AC</button>
+                <button class="keypad-button" onclick="assignValue(0,'denominator')">0</button>
+                <button class="keypad-back-button" onclick="clearLast('denominator')">C</button>
+            </div>
+        </div>
+        <br>
+        <button class="calculate-btn" onclick="getQuotientRemainder()">Calculate</button>
+        <br><br>
+        <div id="resultValue">
+            <!-- Displaying Result portion from script.js  -->
+        </div>
+    </div>
+    <br>
+    <script src="script.js"></script>
+</body>
+
+</html>

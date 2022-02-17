@@ -1,0 +1,73 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.container{
+    width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    margin-top: 8%;
+    background-color: white;
+    text-align: center;
+    max-width: 98%;
+    padding-top: 20px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.075);
+}
+
+.keypad-container{ 
+    display: flex;
+    flex-direction: row;
+}
+
+.keypad-right{
+    margin-left: 20px;
+}
+
+.keypad-button{
+    padding:10px;
+    margin: 5px;
+}
+
+.keypad-clear-button{
+    padding: 5px;
+    margin: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.keypad-back-button{
+    padding: 9px;
+    margin: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.input-field{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+}
+
+.result-box{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 2px solid black;
+    width:90%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.calculate-btn{
+    width: 70%;
+    padding: 8px;
+    background-color: transparent;
+}
+
+.calculate-btn:hover{
+    background-color: rgb(230, 224, 224);
+}
